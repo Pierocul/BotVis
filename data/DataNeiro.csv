@@ -1,0 +1,21 @@
+Tipo de Bot;Descripci�n;Intenci�n;Red Social
+Benigno;Bot de clima que entrega pron�stico diario;No malicioso;X
+Benigno;Bot de noticias con titulares verificados;No malicioso;X
+Benigno;Bot de resultados deportivos en tiempo real;No malicioso;X
+Benigno;Bot que avisa nuevos papers o art�culos;No malicioso;Facebook
+Benigno;Bot de recordatorios (eventos, tareas);No malicioso;Instagram
+Benigno;Bot moderador que elimina spam en foros;No malicioso;Reddit
+Malicioso;Difunde spam y enlaces enga�osos;Malicioso;X
+Malicioso;Desinformaci�n pol�tica antes de elecciones;Malicioso;Facebook
+Malicioso;Comprador autom�tico de seguidores falsos;Malicioso;Instagram
+Malicioso;Amplifica discursos de odio coordinados;Malicioso;X
+Malicioso;Enlaces de phishing para robar datos;Malicioso;Facebook
+Malicioso;Inunda hashtags para ocultar protestas;Malicioso;X
+Malicioso;Manipula trending topics con mensajes masivos;Malicioso;X
+Malicioso;Se hace pasar por persona usando foto robada;Malicioso;Instagram
+Cyborg mixto;Cuenta de marca: IA publica, humanos responden;Mixto/Ambiguo;Instagram
+Cyborg mixto;Influencer con publicaciones autom�ticas;Mixto/Ambiguo;Instagram
+Cyborg mixto;Cuenta pol�tica gestionada por equipo humano + IA;Mixto/Ambiguo;Facebook
+Cyborg mixto;CM que usa IA para generar borradores;Mixto/Ambiguo;X
+Cyborg mixto;Perfil que alterna tweets humanos e IA;Mixto/Ambiguo;X
+Cyborg mixto;Atenci�n al cliente con IA y escalamiento humano;Mixto/Ambiguo;Facebook
