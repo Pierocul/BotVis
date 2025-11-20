@@ -219,6 +219,7 @@ function draw() {
   
   // Dibujar leyenda
   drawLegend();
+  drawTypeLegend();
 }
 
 function getColorForRed(red) {
@@ -321,6 +322,77 @@ function drawLegend() {
     yPos += itemHeight;
   }
   
+  pop();
+}
+
+function drawTypeLegend() {
+  let items = [
+    {
+      label: "Bot Benigno",
+      img: imgBenigno,
+      fallbackIcon: "✓",
+      color: [120, 190, 255],
+    },
+    {
+      label: "Bot Malicioso",
+      img: imgMalicioso,
+      fallbackIcon: "!",
+      color: [255, 120, 120],
+    },
+    {
+      label: "Bot Cyborg",
+      img: imgCyborg,
+      fallbackIcon: "⚡",
+      color: [180, 120, 255],
+    },
+  ];
+
+  let boxWidth = 200;
+  let itemHeight = 60;
+  let x = width - boxWidth - 20;
+  let y = 20;
+  let boxHeight = items.length * itemHeight + 20;
+
+  push();
+  rectMode(CORNER);
+  fill(255, 255, 250, 240);
+  stroke(100, 100, 150, 200);
+  strokeWeight(1);
+  rect(x, y, boxWidth, boxHeight, 8);
+
+  fill(40, 40, 40);
+  textAlign(LEFT, TOP);
+  textSize(14);
+  textStyle(BOLD);
+  text("Tipos de Bots", x + 10, y + 8);
+  textStyle(NORMAL);
+
+  let yPos = y + 30;
+  for (let item of items) {
+    push();
+    translate(x + 20, yPos + 20);
+    if (item.img && item.img.width > 0) {
+      imageMode(CENTER);
+      image(item.img, 0, 0, 40, 40);
+    } else {
+      fill(item.color[0], item.color[1], item.color[2], 230);
+      noStroke();
+      circle(0, 0, 36);
+      fill(255);
+      textAlign(CENTER, CENTER);
+      textSize(18);
+      text(item.fallbackIcon, 0, 1);
+    }
+    pop();
+
+    fill(40, 40, 40);
+    textAlign(LEFT, CENTER);
+    textSize(12);
+    text(item.label, x + 60, yPos + 20);
+
+    yPos += itemHeight;
+  }
+
   pop();
 }
 
